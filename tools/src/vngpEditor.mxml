@@ -1,4 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" creationComplete="creationCompleteImpl()" width="100%" height="100%">
 	
+	<mx:Script>
+		<![CDATA[
+			import mx.rpc.http.HTTPService;
+			import mx.collections.XMLListCollection;
+			import mx.controls.Alert;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			
+			//keep a request count not to make new request until last request data is received
+			private var loadRequests:int = 0;
+ 
+			[Bindable]
+			private var list:XMLListCollection = new XMLListCollection();
+			//http service from where you get random data
+			private var httpService:HTTPService = new HTTPService();
+			
+			private function creationCompleteImpl():void {
+				//add an event listener for the httpService events
+				httpService.url = parameters.xmlTreeUrl;
+				httpService.resultFormat = "e4x"
+				httpService.addEventListener(ResultEvent.RESULT, httpServiceEvent);
+				httpService.addEventListener(FaultEvent.FAULT, httpServiceEvent);
+				getNewData();
+			}
+			
+			private function getNewData():void
+			{
+				if (loadRequests == 0)	{
+					var root_id:int = this.parameters.root_id;
+//					Alert.show("" + root_id);		
+					httpService.send({'root_id': root_id});
+					loadRequests++;
+				}
+			}
+			
+			/**
+			 * httpService event handler 
+			 */
+			private function httpServiceEvent(event:Event):void	{
+				if(event is ResultEvent) { //if we get a result from the httpService 
+					//parse the result and add the values to the datagrid
+					//on a request the test php returns 50 random values
+					var result:XML = XML((event as ResultEvent).result);
+					list = new XMLListCollection(result.node);
+//					Alert.show(result.node);
+				} else {
+					//show an alert if error
+					Alert.show((event as FaultEvent).message.toString());
+				}
+//				loadRequests--;
+//				if(loadRequests == 0)
+//				{
+//					loadingCanvas.visible = false;
+//				}
+			}
+			
+			
+		]]>
+	</mx:Script>
+	<mx:HDividedBox left="10" top="10" right="10" bottom="10" verticalAlign="middle">
+		<mx:Panel width="250" height="98%" layout="absolute">
+			<mx:Tree left="0" top="0" right="0" bottom="0" id="tree" dataProvider="{list}" labelField="@name" editable="true"></mx:Tree>
+			<mx:ControlBar horizontalAlign="center" horizontalGap="4">
+				<mx:Button label="Add"/>
+				<mx:Button label="Delete"/>
+				<mx:Button label="Up"/>
+				<mx:Button label="Down"/>
+			</mx:ControlBar>
+		</mx:Panel>
+		<mx:Panel width="394" height="98%" layout="absolute" paddingLeft="5" paddingRight="5" horizontalGap="15">
+		</mx:Panel>
+	</mx:HDividedBox>
 </mx:Application>

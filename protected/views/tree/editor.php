@@ -5,6 +5,6 @@
 	'height'=>'600',
 	'align'=>'left',
 	'flashVars'=>array(
-		'xmlTree'=>$this->createUrl('tree/xml'),
+		'xmlTreeUrl'=>$this->createUrl('tree/xml'),
 		'root_id'=>'0',
 	))); ?>
