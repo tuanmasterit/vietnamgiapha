@@ -936,9 +936,11 @@ class TreeBehavior extends CNestedSetBehavior
 		$depth_key = 'level';
 		foreach($rows as $key => $arr ) {
 			if( $arr[$depth_key] == 0 ) {
-				$arr['xml'] = $root->addChild('node', $arr['name']);
+				//$arr['xml'] = $root->addChild('node', $arr['name']);
+				$arr['xml'] = $root->addChild('node');
 				$arr['xml']->addAttribute('id', $arr['id']);
     			$arr['xml']->addAttribute('level', $arr['level']);
+				$arr['xml']->addAttribute('name', $arr['name']);
 				$nested[$key] = $arr;
 				$depths[$arr[$depth_key] + 1] = $key;
 			}
@@ -947,9 +949,11 @@ class TreeBehavior extends CNestedSetBehavior
 				for( $i = 1; $i <= ( $arr[$depth_key] ); $i++ ) {
 					$parent =& $parent[$depths[$i]];
 				}
-				$arr['xml'] = $parent['xml']->addChild('node', $arr['name']);
+				//$arr['xml'] = $parent['xml']->addChild('node', $arr['name']);
+				$arr['xml'] = $parent['xml']->addChild('node');
 				$arr['xml']->addAttribute('id', $arr['id']);
     			$arr['xml']->addAttribute('level', $arr['level']);
+    			$arr['xml']->addAttribute('name', $arr['name']);
 				$parent[$key] = $arr;
 				$depths[$arr[$depth_key] + 1] = $key;
 			}
