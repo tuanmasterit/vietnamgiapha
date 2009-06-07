@@ -33,7 +33,7 @@ class TreeController extends CController
 	{
 		return array(
 			array('allow',  // allow all users to perform 'list' and 'show' actions
-				'actions'=>array('xml', 'list','show'),
+				'actions'=>array('xml', 'list','show', 'saveXML'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -133,6 +133,12 @@ class TreeController extends CController
 	
 	public function actionEditor() {
 		$this->render('editor');
+	}
+	
+	public function actionSaveXML() {
+		header('Content-Type: text/xml');
+		print_r($_POST['giapha']);
+		exit();
 	}
 
 	/**
