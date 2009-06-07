@@ -16,6 +16,7 @@
 			private var list:XMLListCollection = new XMLListCollection();
 			//http service from where you get random data
 			private var httpService:HTTPService = new HTTPService();
+			private var saveService:HTTPService = new HTTPService();
 			
 			private function creationCompleteImpl():void {
 				//add an event listener for the httpService events
@@ -23,6 +24,15 @@
 				httpService.resultFormat = "e4x"
 				httpService.addEventListener(ResultEvent.RESULT, httpServiceEvent);
 				httpService.addEventListener(FaultEvent.FAULT, httpServiceEvent);
+				
+				//init save service
+				saveService.url = parameters.saveTreeUrl;
+				saveService.resultFormat = "e4x"
+				saveService.method = "POST"
+				saveService.addEventListener(ResultEvent.RESULT, saveServiceEvent);
+				saveService.addEventListener(FaultEvent.FAULT, httpServiceEvent);
+				
+				//get giapha data
 				getNewData();
 			}
 			
@@ -57,10 +67,23 @@
 //				}
 			}
 			
+			private function saveServiceEvent(event:Event):void	{
+				if(event is ResultEvent) {
+					var result:XML = XML((event as ResultEvent).result); 
+					Alert.show("Save ok: " + result.toXMLString());
+				} else {
+					Alert.show((event as FaultEvent).message.toString());
+				}
+			}
 			
+			private function onSave(event:Event):void {
+				var params:Object = new Object();
+				params.giapha = list.toXMLString();
+				saveService.send(params);
+			}
 		]]>
 	</mx:Script>
-	<mx:HDividedBox left="10" top="10" right="10" bottom="10" verticalAlign="middle">
+	<mx:HDividedBox left="5" top="5" right="5" bottom="50" verticalAlign="middle">
 		<mx:Panel width="250" height="98%" layout="absolute">
 			<mx:Tree left="0" top="0" right="0" bottom="0" id="tree" dataProvider="{list}" labelField="@name" editable="true"></mx:Tree>
 			<mx:ControlBar horizontalAlign="center" horizontalGap="4">
@@ -73,4 +96,8 @@
 		<mx:Panel width="394" height="98%" layout="absolute" paddingLeft="5" paddingRight="5" horizontalGap="15">
 		</mx:Panel>
 	</mx:HDividedBox>
+	<mx:ApplicationControlBar bottom="10" right="10" left="10">
+		<mx:Button label="Save" click="onSave(event)"/>
+		<mx:Button label="Button"/>
+	</mx:ApplicationControlBar>
 </mx:Application>
