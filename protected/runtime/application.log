@@ -10,3 +10,85 @@
 2009/05/28 17:22:10 [error] [system.db.CDbCommand] Error in querying SQL: SELECT `users`.`id` AS t0_c0, `users`.`username` AS t0_c1, `users`.`password` AS t0_c2, `users`.`email` AS t0_c3, `users`.`email_visible` AS t0_c4, `users`.`notify_comments` AS t0_c5, `users`.`notify_messages` AS t0_c6, `users`.`about` AS t0_c7, `users`.`aboutParsed` AS t0_c8, `users`.`group_id` AS t0_c9, `users`.`email_confirmed` AS t0_c10, `users`.`created` AS t0_c11, `users`.`modified` AS t0_c12, `users`.`firstname` AS t0_c13, `users`.`lastname` AS t0_c14, t1.`id` AS t1_c0, t1.`name` AS t1_c1, t1.`created` AS t1_c2, t1.`modified` AS t1_c3 FROM `users`  LEFT OUTER JOIN `group` t1 ON (`users`.`group_id`=t1.`id`) ORDER BY `user`.`created` DESC LIMIT 25
 2009/05/28 17:23:12 [error] [system.db.CDbCommand] Error in querying SQL: SELECT `users`.`id` AS t0_c0, `users`.`username` AS t0_c1, `users`.`password` AS t0_c2, `users`.`email` AS t0_c3, `users`.`email_visible` AS t0_c4, `users`.`notify_comments` AS t0_c5, `users`.`notify_messages` AS t0_c6, `users`.`about` AS t0_c7, `users`.`aboutParsed` AS t0_c8, `users`.`group_id` AS t0_c9, `users`.`email_confirmed` AS t0_c10, `users`.`created` AS t0_c11, `users`.`modified` AS t0_c12, `users`.`firstname` AS t0_c13, `users`.`lastname` AS t0_c14, t1.`id` AS t1_c0, t1.`name` AS t1_c1, t1.`created` AS t1_c2, t1.`modified` AS t1_c3 FROM `users`  LEFT OUTER JOIN `group` t1 ON (`users`.`group_id`=t1.`id`) ORDER BY `user`.`created` DESC LIMIT 25
 2009/05/28 17:26:53 [error] [system.db.CDbCommand] Error in querying SQL: SELECT `users`.`id` AS t0_c0, `users`.`username` AS t0_c1, `users`.`password` AS t0_c2, `users`.`email` AS t0_c3, `users`.`email_visible` AS t0_c4, `users`.`notify_comments` AS t0_c5, `users`.`notify_messages` AS t0_c6, `users`.`about` AS t0_c7, `users`.`aboutParsed` AS t0_c8, `users`.`group_id` AS t0_c9, `users`.`email_confirmed` AS t0_c10, `users`.`created` AS t0_c11, `users`.`modified` AS t0_c12, `users`.`firstname` AS t0_c13, `users`.`lastname` AS t0_c14, t1.`id` AS t1_c0, t1.`name` AS t1_c1, t1.`created` AS t1_c2, t1.`modified` AS t1_c3 FROM `users`  LEFT OUTER JOIN `group` t1 ON (`users`.`group_id`=t1.`id`) ORDER BY `user`.`created` DESC LIMIT 25
+2009/06/07 17:27:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/07 17:27:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/07 17:27:28 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 17:27:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/07 17:31:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/07 17:31:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/07 17:31:55 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 17:31:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/07 17:40:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/07 17:40:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/07 17:40:39 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 17:40:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/07 17:41:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/07 17:41:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/07 17:41:10 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 17:41:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/07 17:44:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/07 17:44:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/07 17:44:18 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 17:44:18 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/07 18:16:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/07 18:16:25 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/07 18:16:25 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 18:16:25 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/07 18:16:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/07 18:16:43 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/07 18:16:43 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 18:16:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='home1' LIMIT 1
+2009/06/07 18:16:43 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 18:16:43 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/07 18:18:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/07 18:18:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/07 18:18:34 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/07 18:18:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/07 18:28:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `Tree`
+2009/06/07 18:28:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `Tree`
+2009/06/07 18:28:34 [trace] [system.db.CDbCommand] Executing SQL: insert into tree_copy set 
+		    id=2, 
+		    name=''
+		    lft=, 
+		    rgt=1
+2009/06/07 18:28:34 [error] [system.db.CDbCommand] Error in executing SQL: insert into tree_copy set 
+		    id=2, 
+		    name=''
+		    lft=, 
+		    rgt=1
+2009/06/07 18:29:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `Tree`
+2009/06/07 18:29:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `Tree`
+2009/06/07 18:29:14 [trace] [system.db.CDbCommand] Querying SQL: insert into tree_copy set 
+		    id=2, 
+		    name=''
+		    lft=, 
+		    rgt=1
+2009/06/07 18:29:14 [error] [system.db.CDbCommand] Error in querying SQL: insert into tree_copy set 
+		    id=2, 
+		    name=''
+		    lft=, 
+		    rgt=1
+2009/06/08 17:31:31 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/08 17:31:35 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/08 17:31:35 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/08 17:31:36 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/09 00:59:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/09 00:59:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/09 00:59:15 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/09 00:59:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='home1' LIMIT 1
+2009/06/09 00:59:15 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/09 00:59:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/09 01:07:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/09 01:07:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/09 01:07:16 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/09 01:07:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='home1' LIMIT 1
+2009/06/09 01:07:16 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/09 01:07:16 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/09 14:00:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/09 14:00:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/09 14:00:09 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/09 14:00:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1
+2009/06/10 14:53:12 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `textedit`
+2009/06/10 14:53:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `textedit`
+2009/06/10 14:53:14 [trace] [system.db.ar.CActiveRecord] TextEdit.find()
+2009/06/10 14:53:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `textedit` WHERE `namedId`='footer' LIMIT 1

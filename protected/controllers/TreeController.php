@@ -137,7 +137,8 @@ class TreeController extends CController
 	
 	public function actionSaveXML() {
 		header('Content-Type: text/xml');
-		print_r($_POST['giapha']);
+		$xml = $_POST['giapha'];
+		Tree::model()->xml2tree($xml);
 		exit();
 	}
 
