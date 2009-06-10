@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Form xmlns:mx="http://www.adobe.com/2006/mxml" width="332" height="352">
+	<mx:FormItem label="Giới tính"  width="100%">
+		<mx:RadioButton label="Nam"/>
+	</mx:FormItem>
+	
+	<mx:FormItem label="Tên Húy"  width="100%">
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem label="Tên Tự"  width="100%">
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem label="Tên Thường"  width="100%">
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem label="Thụy Hiệu"  width="100%">
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem label="Mã số" width="100%" >
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem label="Con thứ" width="100%" >
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem label="Ngày sinh" width="100%" >
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem label="Ngày mất" width="100%" >
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem label="Nơi an táng" width="100%" >
+		<mx:TextInput width="98%"/>
+	</mx:FormItem>
+	<mx:FormItem width="100%" indicatorGap="0" labelWidth="0">
+		<mx:ControlBar width="100%" horizontalAlign="right">
+			<mx:Button label="Save"/>
+		</mx:ControlBar>
+	</mx:FormItem>
+	<!--
+	<mx:FormItem indicatorGap="0" width="445" height="239">
+		<mx:FormItem direction="horizontal" indicatorGap="0">
+			<mx:FormItem indicatorGap="0">
+				<mx:FormItem label="Giới tính" width="213" labelWidth="80" indicatorGap="5">
+					<mx:RadioButton label="Nam"/>
+				</mx:FormItem>
+				
+				<mx:FormItem label="Tên Húy" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+				<mx:FormItem label="Tên Tự" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+				<mx:FormItem label="Tên Thường" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+				<mx:FormItem label="Thụy Hiệu" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+			</mx:FormItem>
+			<mx:FormItem indicatorGap="0">		
+				<mx:FormItem label="Mã số" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+				<mx:FormItem label="Con thứ" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+				<mx:FormItem label="Ngày sinh" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+				<mx:FormItem label="Ngày mất" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+				<mx:FormItem label="Nơi an táng" width="213" labelWidth="80" indicatorGap="5">
+					<mx:TextInput/>
+				</mx:FormItem>
+			</mx:FormItem>	
+		</mx:FormItem>
+		<mx:FormItem label="Nơi an táng" width="433" labelWidth="80" height="98" indicatorGap="5">
+			<mx:TextArea width="98%" height="95%"/>
+		</mx:FormItem>
+	</mx:FormItem>
+	-->	
+</mx:Form>

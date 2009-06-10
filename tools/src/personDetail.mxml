@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="690" height="464" xmlns:ns1="*">
+	<mx:HDividedBox left="5" right="5" top="5" bottom="5">
+		<mx:VDividedBox height="98%">
+			<mx:TileList height="99%" width="100%"></mx:TileList>
+			<mx:DataGrid width="100%">
+				
+			</mx:DataGrid>
+		</mx:VDividedBox>
+		<ns1:personForm height="98%">
+		</ns1:personForm>
+	</mx:HDividedBox>
+	
+</mx:Canvas>
