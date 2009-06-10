@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" creationComplete="creationCompleteImpl()" width="100%" height="100%">
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" creationComplete="creationCompleteImpl()" width="100%" height="100%" xmlns:ns1="*">
 	
 	<mx:Script>
 		<![CDATA[
@@ -27,7 +27,7 @@
 				
 				//init save service
 				saveService.url = parameters.saveTreeUrl;
-				saveService.resultFormat = "e4x"
+				saveService.resultFormat = "text"
 				saveService.method = "POST"
 				saveService.addEventListener(ResultEvent.RESULT, saveServiceEvent);
 				saveService.addEventListener(FaultEvent.FAULT, httpServiceEvent);
@@ -69,8 +69,9 @@
 			
 			private function saveServiceEvent(event:Event):void	{
 				if(event is ResultEvent) {
-					var result:XML = XML((event as ResultEvent).result); 
-					Alert.show("Save ok: " + result.toXMLString());
+					Alert.show("" + (event as ResultEvent).result);
+//					var result:XML = XML((event as ResultEvent).result); 
+//					Alert.show("Save ok: " + result.toXMLString());
 				} else {
 					Alert.show((event as FaultEvent).message.toString());
 				}
@@ -81,23 +82,61 @@
 				params.giapha = list.toXMLString();
 				saveService.send(params);
 			}
+			
+			private function addPerson(event:Event):void {
+                var newNode:XML = <node/>;
+                newNode.@name = 'Khanh Beo';
+                var parent = tree.selectedItem;
+                if (parent == null) {
+                	Alert.show("Please select a node");
+                	return;
+                }
+                parent.appendChild(newNode);
+            }
+            
+            private function removePerson(event:Event):void {
+                var node:XML = XML(tree.selectedItem);
+                if (node == null) {
+                	Alert.show("Please select a node");
+                	return;
+                }
+                var children:XMLList = XMLList(node.parent()).children();
+                for(var i:Number=0; i < children.length(); i++) {
+
+                    if( children[i].@name == node.@name ) {
+                        delete children[i];
+                    }
+
+                }
+
+            }
 		]]>
 	</mx:Script>
 	<mx:HDividedBox left="5" top="5" right="5" bottom="50" verticalAlign="middle">
 		<mx:Panel width="250" height="98%" layout="absolute">
 			<mx:Tree left="0" top="0" right="0" bottom="0" id="tree" dataProvider="{list}" labelField="@name" editable="true"></mx:Tree>
 			<mx:ControlBar horizontalAlign="center" horizontalGap="4">
-				<mx:Button label="Add"/>
-				<mx:Button label="Delete"/>
+				<mx:Button label="Add" click="{addPerson(event)}"/>
+				<mx:Button label="Delete" click="{removePerson(event)}"/>
 				<mx:Button label="Up"/>
 				<mx:Button label="Down"/>
 			</mx:ControlBar>
 		</mx:Panel>
-		<mx:Panel width="394" height="98%" layout="absolute" paddingLeft="5" paddingRight="5" horizontalGap="15">
-		</mx:Panel>
+		<mx:TabNavigator width="100%" height="98%">				
+			<ns1:personDetail width="100%" height="100%" label="Thông tin">
+			</ns1:personDetail>
+			<ns1:phaky label="Phả ký" width="100%" height="100%">
+			</ns1:phaky>
+			<ns1:thuyto label="Thủy tổ" width="100%" height="100%">
+			</ns1:thuyto>
+			<ns1:tocuoc label="Tộc ước" width="100%" height="100%">
+			</ns1:tocuoc>
+			<ns1:huonghoa label="Hương hỏa" width="100%" height="100%">
+			</ns1:huonghoa>
+		</mx:TabNavigator>
 	</mx:HDividedBox>
 	<mx:ApplicationControlBar bottom="10" right="10" left="10">
-		<mx:Button label="Save" click="onSave(event)"/>
-		<mx:Button label="Button"/>
+		<mx:Button label="Upload" click="onSave(event)"/>
+		<mx:Button label="Download"/>
 	</mx:ApplicationControlBar>
 </mx:Application>
