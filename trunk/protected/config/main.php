@@ -47,13 +47,13 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CWebLogRoute',
-					'levels'=>'trace, info, error, warning',
-					'categories'=>'system.db.*',
+					'levels'=>'info, error, warning',
+					'categories'=>'system.*',
 				),
 				array(
 					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning, watch',
-					'categories'=>'system.*',
+					'levels'=>'trace, error, warning, watch',
+					'categories'=>'system.db.*',
 				),
 			),
 		),

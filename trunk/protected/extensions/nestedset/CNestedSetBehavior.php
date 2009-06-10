@@ -141,4 +141,6 @@ abstract class CNestedSetBehavior extends CActiveRecordBehavior
     public abstract function moveRight();
 
     public abstract function printTree($rootId = 0, $format = 'text');
+    
+    public abstract function xml2tree($xml);
 }
