@@ -1,0 +1,79 @@
+#summary One-sentence summary of this page.
+#labels Featured,Phase-Deploy
+
+= HƯỚNG DẪN SỬ DỤNG =
+
+Trang này mô tả hướng dẫn chi tiết cách sử dụng phần mềm Gia Phả.
+
+
+= CHỨC NĂNG HIỆN CÓ =
+
+Để lập Gia Phả, bạn có thể sử dụng 1 trong 2 phần mềm sau:
+  * 1. Phần mềm Việt Nam Gia Phả
+  * 2. Website http://www.vietnamgiapha.com
+ 
+== 1. Phần mềm Việt Nam Gia Phả ==
+  * Cho phép lập Gia Phả, chi tiết từng gia đình, từng người trong Gia Đình
+  * Ghi chú: Phả Ký, bài viết về Thủy Tổ, Hương Hỏa
+  * Chưa cho phép In ra giấy (Chức năng này đang làm)
+  
+== 2. Website http://www.vietnamgiapha.com ==
+  * Cho phép lập Gia Phả, chi tiết từng gia đình, từng người trong Gia Đình
+  * Ghi chú: Phả Ký, bài viết về Thủy Tổ, Hương Hỏa
+  * Cho phép In ra giấy (Chức năng này đang làm)
+  * Chỉ cần đăng ký một tài khoản sử dụng (member) trên website, sau đó bạn lập Gia Phả.
+
+= PHẦN DƯỚI ĐÂY, SẼ NÓI VỀ PHẦN MỀM GIA PHẢ ==
+= HƯỚNG DẪN DOWNLOAD PHẦN MỀM =
+
+Để sử dụng, bạn phải có những phần sau:
+  * 1. Download phần mềm Việt Nam Gia Phả 1.2
+  * 2. Download và cài đặt JRE ( Java Runtime Environment )
+  * 3. Phần mềm gõ Tiếng Việt Unikey - để gõ Unicode
+
+== 1. Download phần mềm Việt Nam Gia Phả 1.2 ==
+  * Click vào: http://code.google.com/p/vietnamgiapha/downloads/list
+  * Chọn file download là: vngp1.2.jar (Việt Nam Gia Phả Editor 1.2.1)
+  * Download xuống, và Save vào 1 thư mục: c:\vngp
+  
+== 2. Download và cài đặt JRE ( Java Runtime Environment ) ==
+  * Click vào http://java.sun.com/javase/downloads/index.jsp
+  * Kéo chuột xuống dưới, Chọn _"Java SE Runtime Environment (JRE)"_
+  * Click vào Link (Button) download, bên cạnh _"Java SE Runtime Environment (JRE)"_
+  * Sau khi download xong, bạn chạy file vừa doanload xuống, nó sẽ tự cài JRE vào máy tính.
+
+== 3. Phần mềm gõ Tiếng Việt Unikey - để gõ Unicode ==
+Chúng tôi khuyến cáo bạn nên tôn trọng bản quyền, bằng cách sử dụng những phần mềm hợp pháp. Unikey là phần mềm miễn phí, cho phép gõ Tiếng Việt. Không nên xài phần mềm Vietkey Crack(Nếu có tiền thì nên mua).
+
+Download Unikey ở đây: http://www.unikey.org/bdownload.php
+
+= CHẠY CHƯƠNG TRÌNH =
+   * Sau khi cài đặt JRE ( Bước 2), bạn chạy Unikey và chọn Bảng Mã: UNICODE, kiểu gõ: Telex, hay VNI tùy bạn.
+   * vào chỗ download phần mềm Việt Nam Gia Phả 1.2, ở đây là: c:\vngp, và click vào file vngp1.2.jar Nếu cài đặt đúng, thì nó sẽ chạy bình thường.
+
+= NHỮNG LỖI CÓ THỂ GẶP =
+   * Click vào vngp1.2.jar, mà không chạy ? Có thể những lý do sau:
+        # JRE chưa cài đặt => Xem lại bên trên, download JRE và cài đặt.
+        # JRE cài rồi, nhưng JRE tùy chỉnh (configure) không đúng. => Bạn chọn Start->run. Gõ cmd và Enter. Nó sẽ ra màn hình đen thui. Trong màn hình đen thui đó, gõ: java --version.
+_ Nếu nó xuất hiện giống giống vầy, là JRE Đúng.
+{{{
+C:\Documents and Settings\nghia>java -version
+java version "1.6.0_14"
+Java(TM) SE Runtime Environment (build 1.6.0_14-b08)
+Java HotSpot(TM) Client VM (build 14.0-b16, mixed mode, sharing) _
+}}}
+_ Nếu nó giống vầy, thì do JRE chưa setup, hoặc setup sai bét.
+{{{
+C:\Documents and Settings\nghia>java -version
+'java' is not recognized as an internal or external command,
+operable program or batch file. 
+}}}
+bạn phải UNINSTALL JRE, và cài lại. _
+
+
+= HỖ TRỢ =
+   * Hỗ trợ qua email: vuzzan@vietnamgiapha.com
+   * Yahoo Chát: vuzzan
+   * Phone: 0908594239
+
+
