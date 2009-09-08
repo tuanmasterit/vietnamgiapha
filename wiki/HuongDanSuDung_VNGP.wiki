@@ -1,5 +1,13 @@
-#summary One-sentence summary of this page.
 #labels Featured,Phase-Deploy
+= Phần mềm Offline Editor Gia Phả =
+   * Cho phép soạn thảo Gia Phả
+   * kết nối dữ liệu với website www.vietnamgiapha.com
+   * Mã Nguồn Mở
+   * Dùng Java SWT
+
+= Nhóm Tác Giả =
+   * Lương Trọng Nghĩa
+   * Trần Quang Khánh
 
 = HƯỚNG DẪN SỬ DỤNG =
 
@@ -73,7 +81,5 @@ bạn phải UNINSTALL JRE, và cài lại. _
 
 = HỖ TRỢ =
    * Hỗ trợ qua email: vuzzan@vietnamgiapha.com
-   * Yahoo Chát: vuzzan
+   * Yahoo Chát: vuzzan [http://mail.opi.yahoo.com/online?u=doannamtm4&m=g&t=2.gif]
    * Phone: 0908594239
-
-
