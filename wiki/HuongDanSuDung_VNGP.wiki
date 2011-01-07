@@ -1,7 +1,7 @@
-#labels Featured,Phase-Deploy
+#labels Featured,Phase-Deploy,Phase-Support
 = Phần mềm Offline Editor Gia Phả =
    * Cho phép soạn thảo Gia Phả
-   * kết nối dữ liệu với website www.vietnamgiapha.com
+   * Kết nối dữ liệu với website www.vietnamgiapha.com
    * Mã Nguồn Mở
    * Dùng Java SWT
 
@@ -20,10 +20,13 @@ Trang này mô tả hướng dẫn chi tiết cách sử dụng phần mềm Gia
   * 1. Phần mềm Việt Nam Gia Phả
   * 2. Website http://www.vietnamgiapha.com
  
-== 1. Phần mềm Việt Nam Gia Phả ==
+== 1. Phần mềm Việt Nam Gia Phả 1.3 ==
   * Cho phép lập Gia Phả, chi tiết từng gia đình, từng người trong Gia Đình
   * Ghi chú: Phả Ký, bài viết về Thủy Tổ, Hương Hỏa
-  * Chưa cho phép In ra giấy (Chức năng này đang làm)
+  * MỚI: Chức năng vẽ phả đồ: Vẽ tự động, người dùng có thể chỉnh sửa phả đồ.
+  * MỚI: Chức năng In: Người dùng có thê xuất Phả Đồ ra 1 file hình ảnh. Sau đó dùng bất kỳ phần mềm in nào cũng được để in ra giấy.
+  * MỚI: Chức năng download gia phả: Cho phép download 1 gia pha sẵn có trên website Vietnamgiapha.com về, và soạn thảo tiếp. Sau khi soạn xong, có thể upload ngược lại lên website.
+  * ĐANG LÀM TIẾP: Upload ngược lại gia phả lên website http://vietnamgiapha.com
   
 == 2. Website http://www.vietnamgiapha.com ==
   * Cho phép lập Gia Phả, chi tiết từng gia đình, từng người trong Gia Đình
@@ -35,20 +38,21 @@ Trang này mô tả hướng dẫn chi tiết cách sử dụng phần mềm Gia
 = HƯỚNG DẪN DOWNLOAD PHẦN MỀM =
 
 Để sử dụng, bạn phải có những phần sau:
-  * 1. Download phần mềm Việt Nam Gia Phả 1.2
+  * 1. Download phần mềm Việt Nam Gia Phả 1.3.0
   * 2. Download và cài đặt JRE ( Java Runtime Environment )
   * 3. Phần mềm gõ Tiếng Việt Unikey - để gõ Unicode
 
-== 1. Download phần mềm Việt Nam Gia Phả 1.2 ==
+== 1. Download phần mềm Việt Nam Gia Phả 1.3.0 ==
   * Click vào: http://code.google.com/p/vietnamgiapha/downloads/list
-  * Chọn file download là: vngp1.2.jar (Việt Nam Gia Phả Editor 1.2.1)
+  * Chọn file download là: vietnamgiapha-1.3.0.zip (Việt Nam Gia Phả Editor 1.3.0)
   * Download xuống, và Save vào 1 thư mục: c:\vngp
+  * Dùng chương trình giải nén, Winzip hay Window Unzip, giải nén ra thành 2 file là: run.bat và vngp1.3.0.jar
   
 == 2. Download và cài đặt JRE ( Java Runtime Environment ) ==
   * Click vào http://java.sun.com/javase/downloads/index.jsp
   * Kéo chuột xuống dưới, Chọn _"Java SE Runtime Environment (JRE)"_
   * Click vào Link (Button) download, bên cạnh _"Java SE Runtime Environment (JRE)"_
-  * Sau khi download xong, bạn chạy file vừa doanload xuống, nó sẽ tự cài JRE vào máy tính.
+  * Sau khi download xong, bạn chạy file vừa download xuống, nó sẽ tự cài JRE vào máy tính.
 
 == 3. Phần mềm gõ Tiếng Việt Unikey - để gõ Unicode ==
 Chúng tôi khuyến cáo bạn nên tôn trọng bản quyền, bằng cách sử dụng những phần mềm hợp pháp. Unikey là phần mềm miễn phí, cho phép gõ Tiếng Việt. Không nên xài phần mềm Vietkey Crack(Nếu có tiền thì nên mua).
@@ -56,11 +60,11 @@ Chúng tôi khuyến cáo bạn nên tôn trọng bản quyền, bằng cách s�
 Download Unikey ở đây: http://www.unikey.org/bdownload.php
 
 = CHẠY CHƯƠNG TRÌNH =
-   * Sau khi cài đặt JRE ( Bước 2), bạn chạy Unikey và chọn Bảng Mã: UNICODE, kiểu gõ: Telex, hay VNI tùy bạn.
-   * vào chỗ download phần mềm Việt Nam Gia Phả 1.2, ở đây là: c:\vngp, và click vào file vngp1.2.jar Nếu cài đặt đúng, thì nó sẽ chạy bình thường.
+   * Sau khi cài đặt JRE (Bước 2), bạn chạy Unikey và chọn Bảng Mã: UNICODE, kiểu gõ: Telex, hay VNI tùy bạn.
+   * vào chỗ download phần mềm Việt Nam Gia Phả 1.3.0, ở đây theo ví dụ là: c:\vngp, và click vào file vngp1.3.0.jar. Có thể nó không chạy. Nhưng không sao, click tiếp vào file run.bat...Nếu cài đặt đúng, thì chắc chắn nó sẽ chạy bình thường.
 
 = NHỮNG LỖI CÓ THỂ GẶP =
-   * Click vào vngp1.2.jar, mà không chạy ? Có thể những lý do sau:
+   * Click vào run.bat, mà không chạy ? Có thể những lý do sau:
         # JRE chưa cài đặt => Xem lại bên trên, download JRE và cài đặt.
         # JRE cài rồi, nhưng JRE tùy chỉnh (configure) không đúng. => Bạn chọn Start->run. Gõ cmd và Enter. Nó sẽ ra màn hình đen thui. Trong màn hình đen thui đó, gõ: java --version.
 _ Nếu nó xuất hiện giống giống vầy, là JRE Đúng.
@@ -78,8 +82,9 @@ operable program or batch file.
 }}}
 bạn phải UNINSTALL JRE, và cài lại. _
 
+   * Khi chạy chương trình gia phả rồi, có nhiều bạn hỏi tôi tại sao lưu không được? Xin lưu ý là khi soạn xong, nhớ lưu gia phả thành file, có đuôi là xml. Cho kỹ thì lưu lần 2 bằng cách chọn chức năng "Gia phả->Lưu file khác". Sau đó cất giữ file đó cẩn thận. 
 
 = HỖ TRỢ =
    * Hỗ trợ qua email: vuzzan@vietnamgiapha.com
-   * Yahoo Chát: vuzzan [http://mail.opi.yahoo.com/online?u=doannamtm4&m=g&t=2.gif]
-   * Phone: 0908594239
+   * Yahoo Chát: vuzzan [http://mail.opi.yahoo.com/online?u=vuzzan&m=g&t=2.gif]
+   * Phone: 0908594239 - (Xin đừng gọi quá khuya >24g đêm hoặc quá sớm <8g sáng)
