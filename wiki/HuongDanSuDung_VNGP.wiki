@@ -1,4 +1,15 @@
 #labels Featured,Phase-Deploy,Phase-Support
+= CHỨC NĂNG MỚI =
+   * Sửa một đống lỗi linh tinh cũ
+   * MỚI: Chức năng vẽ phả đồ: Vẽ tự động, người dùng có thể chỉnh sửa phả đồ.
+   * MỚI: Chức năng In: Người dùng có thê xuất Phả Đồ ra 1 file hình ảnh. Sau đó dùng bất kỳ phần mềm in nào cũng được để in ra giấy.
+   * MỚI: Chức năng download gia phả: Cho phép download 1 gia pha sẵn có trên website Vietnamgiapha.com về, và soạn thảo tiếp. Sau khi soạn xong, có thể upload ngược lại lên website.
+= CHỨC NĂNG ĐANG LÀM TIẾP TỤC =
+  * UPLOAD ngược lại gia phả lên website http://vietnamgiapha.com
+
+XIN ĐỌC TIẾP PHẦN DƯỚI NỮA.....
+
+
 = Phần mềm Offline Editor Gia Phả =
    * Cho phép soạn thảo Gia Phả
    * Kết nối dữ liệu với website www.vietnamgiapha.com
