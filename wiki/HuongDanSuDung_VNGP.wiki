@@ -60,9 +60,8 @@ Trang này mô tả hướng dẫn chi tiết cách sử dụng phần mềm Gia
   * Dùng chương trình giải nén, Winzip hay Window Unzip, giải nén ra thành 2 file là: run.bat và vngp1.3.0.jar
   
 == 2. Download và cài đặt JRE ( Java Runtime Environment ) ==
-  * Click vào http://java.sun.com/javase/downloads/index.jsp
-  * Kéo chuột xuống dưới, Chọn _"Java SE Runtime Environment (JRE)"_
-  * Click vào Link (Button) download, bên cạnh _"Java SE Runtime Environment (JRE)"_
+  * Click vào http://javadl.sun.com/webapps/download/AutoDL?BundleId=44457
+  * Sẽ download về 1 file cài đặt Java, khoảng 16MB.
   * Sau khi download xong, bạn chạy file vừa download xuống, nó sẽ tự cài JRE vào máy tính.
 
 == 3. Phần mềm gõ Tiếng Việt Unikey - để gõ Unicode ==
@@ -81,9 +80,9 @@ Download Unikey ở đây: http://www.unikey.org/bdownload.php
 _ Nếu nó xuất hiện giống giống vầy, là JRE Đúng.
 {{{
 C:\Documents and Settings\nghia>java -version
-java version "1.6.0_14"
-Java(TM) SE Runtime Environment (build 1.6.0_14-b08)
-Java HotSpot(TM) Client VM (build 14.0-b16, mixed mode, sharing) _
+java version "1.6.0_23"
+Java(TM) SE Runtime Environment (build 1.6.0_23-b05)
+Java HotSpot(TM) Client VM (build 19.0-b09, mixed mode, sharing)
 }}}
 _ Nếu nó giống vầy, thì do JRE chưa setup, hoặc setup sai bét.
 {{{
