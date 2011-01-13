@@ -1,9 +1,12 @@
 #labels Featured,Phase-Deploy,Phase-Support
+= PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.2 =
+
 = DEMO VIDEO - VNGP 1.3.1 =
 <wiki:video url="http://www.youtube.com/watch?v=JbOWkjy27_8"/>
 
-= VNGP 1.3.1 - Bản cập nhật Dành cho những người đã cài phiên bản VNGP 1.3.0 =
-   * Chỉ cần download file [http://code.google.com/p/vietnamgiapha/downloads/detail?name=vietnamgiapha-1.3.1.zip&can=2&q=#makechanges], download xong thì giải nén (unzip) và copy đè lên chỗ cũ.
+= VNGP 1.3.2 - Bản cập nhật Dành cho những người đã cài phiên bản VNGP 1.3.0 và 1.3.1 =
+   * Chỉ cần download file [http://code.google.com/p/vietnamgiapha/downloads/detail?name=vietnamgiapha-1.3.1.zip&can=2&q=#makechanges], download chỉ cần click vô file EXE để chạy. Vẫn cần có Java JRE
+   * Chức năng mới: Hoàn chỉnh vẽ phả đồ. Cho phép thêm người vào phía trên gia đình thuỷ tổ. Chức năng Auto Save, cho phép lưu backup gia phả ra file: backup_giapha.xml ở ổ cứng C:, và vài chức năng linh tinh khác.
 
 = CHỨC NĂNG MỚI VNGP 1.3.0 =
    * Sửa một đống lỗi linh tinh cũ
@@ -55,16 +58,15 @@ Trang này mô tả hướng dẫn chi tiết cách sử dụng phần mềm Gia
 = HƯỚNG DẪN DOWNLOAD PHẦN MỀM =
 
 Để sử dụng, bạn phải có những phần sau:
-  * 1. Download phần mềm Việt Nam Gia Phả 1.3.0
+  * 1. Download phần mềm Việt Nam Gia Phả 1.3.2
   * 2. Download và cài đặt JRE ( Java Runtime Environment )
   * 3. Phần mềm gõ Tiếng Việt Unikey - để gõ Unicode
 
-== 1. Download phần mềm Việt Nam Gia Phả 1.3.0 ==
+== 1. Download phần mềm Việt Nam Gia Phả 1.3.2 ==
   * Click vào: http://code.google.com/p/vietnamgiapha/downloads/list
-  * Chọn file download là: vietnamgiapha-1.3.0.zip (Việt Nam Gia Phả Editor 1.3.0)
+  * Chọn file download là: vngp1.3.2.exe (Việt Nam Gia Phả Editor 1.3.2)
   * Download xuống, và Save vào 1 thư mục: c:\vngp
-  * Dùng chương trình giải nén, Winzip hay Window Unzip, giải nén ra thành 2 file là: run.bat và vngp1.3.0.jar
-  
+ 
 == 2. Download và cài đặt JRE ( Java Runtime Environment ) ==
   * Click vào http://javadl.sun.com/webapps/download/AutoDL?BundleId=44457
   * Sẽ download về 1 file cài đặt Java, khoảng 16MB.
@@ -77,10 +79,10 @@ Download Unikey ở đây: http://www.unikey.org/bdownload.php
 
 = CHẠY CHƯƠNG TRÌNH =
    * Sau khi cài đặt JRE (Bước 2), bạn chạy Unikey và chọn Bảng Mã: UNICODE, kiểu gõ: Telex, hay VNI tùy bạn.
-   * vào chỗ download phần mềm Việt Nam Gia Phả 1.3.0, ở đây theo ví dụ là: c:\vngp, và click vào file vngp1.3.0.jar. Có thể nó không chạy. Nhưng không sao, click tiếp vào file run.bat...Nếu cài đặt đúng, thì chắc chắn nó sẽ chạy bình thường.
+   * Vào chỗ download phần mềm Việt Nam Gia Phả 1.3.2, ở đây theo ví dụ là: c:\vngp, và click vào file vngp1.3.2.exe.
 
 = NHỮNG LỖI CÓ THỂ GẶP =
-   * Click vào run.bat, mà không chạy ? Có thể những lý do sau:
+   * Click vào vngp1.3.2.exe, mà không chạy ? Có thể những lý do sau:
         # JRE chưa cài đặt => Xem lại bên trên, download JRE và cài đặt.
         # JRE cài rồi, nhưng JRE tùy chỉnh (configure) không đúng. => Bạn chọn Start->run. Gõ cmd và Enter. Nó sẽ ra màn hình đen thui. Trong màn hình đen thui đó, gõ: java --version.
 _ Nếu nó xuất hiện giống giống vầy, là JRE Đúng.
