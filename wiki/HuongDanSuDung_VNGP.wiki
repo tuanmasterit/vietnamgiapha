@@ -1,4 +1,7 @@
 #labels Featured,Phase-Deploy,Phase-Support
+= PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.3 =
+Cho phép upload lên web vietnamgiapha.com
+
 = PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.2 =
 
 = DEMO VIDEO - VNGP 1.3.1 =
