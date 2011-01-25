@@ -1,6 +1,8 @@
 #labels Featured,Phase-Deploy,Phase-Support
+= PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.4 =
+* Sửa một số lỗi khi upload, bạn nên dùng phiên bản mới này.
 = PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.3 =
-Cho phép upload lên web vietnamgiapha.com
+*Cho phép upload lên web vietnamgiapha.com
 
 = PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.2 =
 
