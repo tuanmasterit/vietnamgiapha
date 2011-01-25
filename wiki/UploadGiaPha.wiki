@@ -1,6 +1,6 @@
 #labels Featured
 = Thông báo mới =
-  * khi dùng, đã có vài người gọi cho chúng tôi để thông báo lỗi. Phiên bản mới đang được cập nhật những bản sửa lỗi...Xin đợi 1.3.4...
+  * khi dùng, đã có vài người gọi cho chúng tôi để thông báo lỗi. Phiên bản mới đang được cập nhật những bản sửa lỗi...Xin đợi 1.3.4..Chịu khó theo dõi hoặc gọi phone cho Nghĩa nếu có lỗi xảy ra. Xin cám ơn.
 
 = Thông báo 1.3.3 =
   * Phiên bản Việt Nam Gia Phả Offline Editor 1.3.3 có chứa chức năng tải Gia Phả lên website http://vietnamgiapha.com
