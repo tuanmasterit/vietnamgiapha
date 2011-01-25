@@ -1,6 +1,8 @@
 #labels Featured
-= Thông báo =
+= Thông báo mới =
+  * khi dùng, đã có vài người gọi cho chúng tôi để thông báo lỗi. Phiên bản mới đang được cập nhật những bản sửa lỗi...Xin đợi 1.3.4...
 
+= Thông báo 1.3.3 =
   * Phiên bản Việt Nam Gia Phả Offline Editor 1.3.3 có chứa chức năng tải Gia Phả lên website http://vietnamgiapha.com
   * Bạn dùng chức năng này cẩn thận, và phải biết rõ mình đang làm gì. Vì chức năng này, sẽ có thể xóa dữ liệu của Gia Phả của bạn trên web.
   * Chúng tôi yêu cầu bạn thông báo lỗi cho chúng tôi khi sử dụng, bằng cách email tới vuzzan@vietnamgiapha.com hoặc phone cho 0908594239 (Nghĩa)
