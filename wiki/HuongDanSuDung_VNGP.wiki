@@ -1,10 +1,6 @@
 #labels Featured,Phase-Deploy,Phase-Support
-= PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.4 =
+= PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.5 =
 * Sửa một số lỗi khi upload, bạn nên dùng phiên bản mới này.
-= PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.3 =
-*Cho phép upload lên web vietnamgiapha.com
-
-= PHIÊN  BẢN MỚI NHẤT - VNGP 1.3.2 =
 
 = DEMO VIDEO - VNGP 1.3.1 =
 <wiki:video url="http://www.youtube.com/watch?v=JbOWkjy27_8"/>
@@ -63,13 +59,13 @@ Trang này mô tả hướng dẫn chi tiết cách sử dụng phần mềm Gia
 = HƯỚNG DẪN DOWNLOAD PHẦN MỀM =
 
 Để sử dụng, bạn phải có những phần sau:
-  * 1. Download phần mềm Việt Nam Gia Phả 1.3.2
+  * 1. Download phần mềm Việt Nam Gia Phả có dạng file là: vietnamgiapha-1.3.x.exe
   * 2. Download và cài đặt JRE ( Java Runtime Environment )
   * 3. Phần mềm gõ Tiếng Việt Unikey - để gõ Unicode
 
-== 1. Download phần mềm Việt Nam Gia Phả 1.3.2 ==
+== 1. Download phần mềm Việt Nam Gia Phả ==
   * Click vào: http://code.google.com/p/vietnamgiapha/downloads/list
-  * Chọn file download là: vngp1.3.2.exe (Việt Nam Gia Phả Editor 1.3.2)
+  * Chọn file download là: vietnamgiapha-1.3.xx.exe (nhớ chọn phiên bản mới nhất)
   * Download xuống, và Save vào 1 thư mục: c:\vngp
  
 == 2. Download và cài đặt JRE ( Java Runtime Environment ) ==
@@ -84,10 +80,10 @@ Download Unikey ở đây: http://www.unikey.org/bdownload.php
 
 = CHẠY CHƯƠNG TRÌNH =
    * Sau khi cài đặt JRE (Bước 2), bạn chạy Unikey và chọn Bảng Mã: UNICODE, kiểu gõ: Telex, hay VNI tùy bạn.
-   * Vào chỗ download phần mềm Việt Nam Gia Phả 1.3.2, ở đây theo ví dụ là: c:\vngp, và click vào file vngp1.3.2.exe.
+   * Vào chỗ download phần mềm Việt Nam Gia Phả, ở đây theo ví dụ là: c:\vngp, và click vào file vietnamgiapha-1.3.x.exe ( file download ở trên)
 
 = NHỮNG LỖI CÓ THỂ GẶP =
-   * Click vào vngp1.3.2.exe, mà không chạy ? Có thể những lý do sau:
+   * Click vào file .exe, mà không chạy ? Có thể những lý do sau:
         # JRE chưa cài đặt => Xem lại bên trên, download JRE và cài đặt.
         # JRE cài rồi, nhưng JRE tùy chỉnh (configure) không đúng. => Bạn chọn Start->run. Gõ cmd và Enter. Nó sẽ ra màn hình đen thui. Trong màn hình đen thui đó, gõ: java --version.
 _ Nếu nó xuất hiện giống giống vầy, là JRE Đúng.
