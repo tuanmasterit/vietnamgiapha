@@ -1,5 +1,5 @@
 #labels Featured
-= XEM THÔNG TIN VỀ LƯƠNG Y VÕ HOÀNG YÊN Ở: WWW.VOHOANGYEN.COM =
+= XEM THÔNG TIN VỀ LƯƠNG Y VÕ HOÀNG YÊN Ở: WWW.VOHOANGYEN.COM[http://www.vohoangyen.com] =
 = THÔNG BÁO của vietnamgiapha.com =
    * phiên bản mới nhất 1.3.5, mời download
    * Đã phát hiện lỗi trong phiên bản 1.3.3, 1.3.4 khi upload 1 gia phả mà được tạo mới trống trơn, hoặc ra chữ giun dế khi upload. Cám ơn anh Vũ Quốc Bảo(gia phả tộc Võ Văn, http://www.vietnamgiapha.com/XemGiaPha/7914/giapha.html), anh Huỳnh Hồng Đức(http://www.vietnamgiapha.com/XemGiaPha/2071/giapha.html), đã phát hiện và gọi cho Nghĩa để sửa. 
