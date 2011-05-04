@@ -1,15 +1,4 @@
 #labels Featured
 = XEM THÔNG TIN VỀ LƯƠNG Y VÕ HOÀNG YÊN Ở: [http://www.vohoangyen.com] =
-= THÔNG BÁO của vietnamgiapha.com =
-   * phiên bản mới nhất 1.3.5, mời download
-   * Đã phát hiện lỗi trong phiên bản 1.3.3, 1.3.4 khi upload 1 gia phả mà được tạo mới trống trơn, hoặc ra chữ giun dế khi upload. Cám ơn anh Vũ Quốc Bảo(gia phả tộc Võ Văn, http://www.vietnamgiapha.com/XemGiaPha/7914/giapha.html), anh Huỳnh Hồng Đức(http://www.vietnamgiapha.com/XemGiaPha/2071/giapha.html), đã phát hiện và gọi cho Nghĩa để sửa. 
-   * Xin lưu ý, các bạn sẽ giúp ích rất nhiều cho cộng đồng Việt Nam Gia Phả nếu phát hiện lỗi trên phần mềm và báo cho Nghĩa. Xin cám ơn.
-   * Bản phân phối miễn phí của Phần mềm Offline Editor Gia Phả sẽ được cập nhật cho bạn download ở 2 nơi, bạn download phiên bản mới nhất ở đâu cũng được.
-   # GooleCode [http://code.google.com/p/vietnamgiapha/downloads/list] (Thứ 4-5 sẽ không upload được theo thông báo của google. Project Hosting will be READ-ONLY Wednesday at 7:30am PST due to brief maintenance. )
-   # SourgeForge [http://sourceforge.net/projects/vngp/]
-   * Chú ý download những bản mới nhất, vì chúng tôi sẽ cập nhật liên tục nếu có.
-
-= Thông báo 1.3.3 =
-  * Phiên bản Việt Nam Gia Phả Offline Editor 1.3.3 có chứa chức năng tải Gia Phả lên website http://vietnamgiapha.com
-  * Bạn dùng chức năng này cẩn thận, và phải biết rõ mình đang làm gì. Vì chức năng này, sẽ có thể xóa dữ liệu của Gia Phả của bạn trên web.
-  * Chúng tôi yêu cầu bạn thông báo lỗi cho chúng tôi khi sử dụng, bằng cách email tới vuzzan@vietnamgiapha.com hoặc phone cho 0908594239 (Nghĩa)
+= THÔNG BÁO =
+* Xem thông tin chi tiết và hướng dẫn bằng Video ở: http://baiviet.vietnamgiapha.com
